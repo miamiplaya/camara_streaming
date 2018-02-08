@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  background: #252528;
+  color: dimgray;
+  font-family: Benguiat Frisky, calibri, sans-serif;
+  padding: 0 1em; }
+
+/*# sourceMappingURL=index.css.map */
