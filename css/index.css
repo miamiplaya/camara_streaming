@@ -6,13 +6,12 @@
 
 body {
   /* fr -> fracción, proporción */
-  height: 100vh;
+  height: 97vh;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 2fr 5fr 1fr;
   grid-template-areas: "header header header header header header header header logo logo" "aside1 aside1 main main main main main main aside2 aside2" "footer footer footer footer footer footer footer footer footer footer";
-  /* grid-gap es la separación; si hay dos valores, primero, separación entre filas 
-   y luego, separación entre columnas. */
+  /* grid-gap es la separación; si hay dos valores, primero, separación entre filas y luego, separación entre columnas. */
   grid-gap: 5px; }
   body * {
     border: 2px solid red; }
