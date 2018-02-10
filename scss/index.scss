@@ -6,8 +6,79 @@
 }
 
 body {
-    background: #252528;
-    color: dimgray;
-    font-family: Benguiat Frisky, calibri, sans-serif;
-    padding: 0 1em;
+    /* fr -> fracción, proporción */
+    height: 100vh;
+    display: grid;
+    // grid-template-columns: 200px 600px;
+    // grid-template-columns: 20% 80%;
+    // grid-templa/te-rows: 200px 200px 200px;
+    // grid-template-columns: 1fr 4fr;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 2fr 5fr 1fr;
+    grid-template-areas: "header header header header header header header header logo logo" "aside1 aside1 main main main main main main aside2 aside2" "footer footer footer footer footer footer footer footer footer footer";
+    /* grid-gap es la separación; si hay dos valores, primero, separación entre filas 
+     y luego, separación entre columnas. */
+    grid-gap: 5px;
+    * {
+        border: 2px solid red;
+    }
+}
+
+.header {
+    background-color: hsl(140, 80%, 50%);
+    // grid-column: 1 / span 8;
+    // // No se necesita grid-row porque ocupa todo
+    // grid-row: 1;
+    grid-area: header;
+}
+
+.video {
+    margin: 25px;
+    border: none;
+}
+
+.logo {
+    background-color: hsl(140, 80%, 50%);
+    // grid-column: span 2;
+    // // No se necesita grid-row porque ocupa todo
+    // grid-row: 1;
+    grid-area: logo;
+}
+
+.aside1 {
+    background-color: #1BE6C3;
+    // grid-column: 1 / span 2;
+    // grid-row: 2;
+    grid-area: aside1;
+}
+
+.main {
+    background-color: #E5E71D;
+    // grid-column: 3 / span 6;
+    // grid-row: 2;
+    grid-area: main;
+}
+
+.aside2 {
+    background-color: blue;
+    // grid-column: span 2;
+    // grid-row: 2;
+    grid-area: aside2;
+}
+
+.footer {
+    background-color: chocolate;
+    // grid-column: 1 / span 10;
+    // // a grid-row no se le pone span porque ocupará todo
+    // grid-row: 3;
+    grid-area: footer;
+}
+
+@media(max-width: 700px) {
+    .aside1 {
+        grid-area: aside2;
+    }
+    .aside2 {
+        grid-area: aside1;
+    }
 }
