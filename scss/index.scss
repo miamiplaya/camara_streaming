@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-// html {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
 body {
     /* fr -> fracción, proporción */
     // height: 100vh;
@@ -25,7 +20,7 @@ body {
     /* grid-gap es la separación; si hay dos valores, primero, separación entre filas y luego, separación entre columnas. */
     grid-gap: 5px;
     * {
-        border: 2px solid red;
+        border: 1px solid red;
     }
 }
 
@@ -39,7 +34,6 @@ body {
 
 .video {
     margin: 25px;
-    border: none;
 }
 
 .logo {
@@ -77,6 +71,14 @@ body {
     // // a grid-row no se le pone span porque ocupará todo
     // grid-row: 3;
     grid-area: footer;
+}
+
+p {
+    font-family: "calibri";
+    font-size: 26px;
+    font-weight: bold;
+    color: navy;
+    text-align: center;
 }
 
 @media(max-width: 700px) {

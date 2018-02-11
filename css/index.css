@@ -14,15 +14,14 @@ body {
   /* grid-gap es la separación; si hay dos valores, primero, separación entre filas y luego, separación entre columnas. */
   grid-gap: 5px; }
   body * {
-    border: 2px solid red; }
+    border: 1px solid red; }
 
 .header {
   background-color: #1ae65e;
   grid-area: header; }
 
 .video {
-  margin: 25px;
-  border: none; }
+  margin: 25px; }
 
 .logo {
   background-color: #9ee61a;
@@ -43,6 +42,13 @@ body {
 .footer {
   background-color: chocolate;
   grid-area: footer; }
+
+p {
+  font-family: "calibri";
+  font-size: 26px;
+  font-weight: bold;
+  color: navy;
+  text-align: center; }
 
 @media (max-width: 700px) {
   .aside1 {
